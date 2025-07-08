@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.skills-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
+}
+
+.skill-card {
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid var(--nav-blue); */
+    color: var(--nav-blue);
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-icon {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.skill-desc {
+    color: #ff512f;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1.2px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.10);
+}
+
+.heading {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+.heading-text {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.10);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+    .skills-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .skill-icon {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+    
+    .skill-desc {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .skill-card {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .skill-icon {
+        font-size: 1rem;
+    }
+    
+    .skill-desc {
+        font-size: .5rem;
+    }
+}
